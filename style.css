@@ -287,6 +287,7 @@ p[data-width="wide"] {
 
 .primary-footer {
   --logo-color: var(--clr-neuteral-100);
+  position: relative;
 }
 
 .primary-footer-wrapper {
@@ -305,6 +306,12 @@ p[data-width="wide"] {
   flex-direction: column-reverse;
   align-items: center;
   gap: var(--size-700);
+}
+
+@media (max-width: 47em) {
+  .primary-footer-logo-social {
+    margin-bottom: var(--size-800);
+  }
 }
 
 .primary-footer-nav {
@@ -350,6 +357,13 @@ input:where([type="email"]) {
 @media (max-width: 47em) {
     .primary-footer-wrapper > * {
     margin-inline: auto;
+  }
+}
+
+@media (max-width: 47em) {
+  .copyright {
+    position: absolute;
+    bottom: var(--size-700);
   }
 }
 
